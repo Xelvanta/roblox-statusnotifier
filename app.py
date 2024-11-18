@@ -82,7 +82,7 @@ def stop_polling():
 def poll_presence(user_id):
     while polling:
         fetch_user_presence(user_id)
-        time.sleep(1)
+        time.sleep(2) # Polling interval in seconds
 
 # GUI Setup
 root = tk.Tk()
